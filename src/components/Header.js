@@ -4,14 +4,15 @@ import {
     Typography,Avatar,Grid,Box
 } from "@material-ui/core";
 import {makeStyles} from '@material-ui/core/styles'
-import avatar from '../avatar.png'
+import myProfile from '../images/removepic.png'
 
 
 const useStyles=makeStyles(theme=>({
     avatar:{
         width:theme.spacing(15),
         height:theme.spacing(15),
-        margin:theme.spacing(1)
+        margin:theme.spacing(1),
+        transform:"rotate(-6deg)"
     },
     title:{
         color:"tomato"
@@ -36,7 +37,7 @@ const Header = () => {
     return (
         <Box className={classes.typedContainer} >
             <Grid container justify = "center">
-            <Avatar className={classes.avatar} src={avatar} alt="Russel"/>
+            <Avatar className={classes.avatar} src={myProfile} alt="Russel"/>
             </Grid>
             <Typography className={classes.title} variant="h4">
                 <Typed strings={[
